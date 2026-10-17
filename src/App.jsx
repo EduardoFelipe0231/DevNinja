@@ -9,12 +9,13 @@ export default function App() {
 
   const tecs = getTecs();
 
-  const [input, setInput] = useState();
+  const [input, setInput] = useState("");
 
   const handleChangeInput = (e) => {
     setInput(e.target.value)
   }
 
+  
   return (
       <div className='w-screen h-screen bg-zinc-200 overflow-y-auto flex flex-col'>
           <Header />
@@ -38,7 +39,15 @@ export default function App() {
                   
                   <div className='grid grid-cols-1 gap-3 md:grid-cols-2 lg:md:grid-cols-3 mt-6'>
                     {/* componente */}
-                  {tecs
+
+                  {/* Filtro e mapa dos objetos */}
+                  {tecs.filter((item) => {
+                    if (input == ""){
+                      return item              
+                    } else if (item.title.toLowerCase().includes(input.toLocaleLowerCase())) {
+                      return item
+                    }
+                  })
                   .map((tec) => (
                     <Tecs tec={tec} key={tec.id} />
                   ))}                  
