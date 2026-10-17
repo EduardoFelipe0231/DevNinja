@@ -3,6 +3,7 @@ import { useState } from "react";
 
 const Header = () => {
 
+    // Menu mobile - criar o state e depois a função
     const [isOpen, setIsOpen] = useState(false)
 
     const handleMenu = () => {

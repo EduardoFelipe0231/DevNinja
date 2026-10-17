@@ -23,6 +23,11 @@ const tecs = [
         "id": 5,
         "title": "Python",
         "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ullam ratione, voluptatem necessitatibus porro praesentium soluta accusamus! Quod voluptatum laborum nihil exceptura"
+    },
+    {
+        "id": 6,
+        "title": "Python",
+        "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ullam ratione, voluptatem necessitatibus porro praesentium soluta accusamus! Quod voluptatum laborum nihil exceptura"
     }
 ]
 
