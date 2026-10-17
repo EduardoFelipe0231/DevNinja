@@ -12,7 +12,7 @@ const Header = () => {
 
     return(
         <header className="bg-zinc-900 shadow w-full flex items-center px-5 ">
-            <div className="container mx-auto py-4 flex items-center justify-between">
+            <div className=" relative container mx-auto py-4 flex items-center justify-between">
                 <div className="bg-yellow-300 p-2 rounded-sm">
                     <h2 className="font-semibold text-sm">DevNinja</h2>
                 </div>
@@ -39,7 +39,7 @@ const Header = () => {
                     )}
 
                     <nav 
-                        className={`text-zinc-950 bg-yellow-300/95 absolute top-17 right-0 w-full h-full flex justify-center items-center rounded-sm ${isOpen ? "opacity-100" : "opacity-0 h-full" }`} style={{transition: "transform 0.3s ease, opacity 0.3s ease"}}>
+                        className={`text-zinc-950 bg-yellow-300/95 fixed top-17 right-0 w-full h-full flex justify-center items-center rounded-sm ${isOpen ? "opacity-100" : "opacity-0 hidden" }`} style={{transition: "transform 0.3s ease, opacity 0.3s ease"}}>
                         
                         <ul className="flex  flex-col items-center gap-5 text-lg">
                             <li className="py-10 hover:bg-zinc-200 w-full text-center">
