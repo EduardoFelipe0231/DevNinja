@@ -50,7 +50,7 @@ const Header = () => {
 
                 {/* Dark mode */}
                 <div onClick={toogleTheme} className="transition-all cursor-pointer p-2  rounded-full text-zinc-10 dark:text-zinc-100">
-                    {mode ? (<p className="bg-blue-600 px-2 py-1 rounded-sm text-zinc-100">Light</p>) : (<p className="bg-blue-600 px-2 py-1 rounded-sm text-zinc-100">Dark</p>)}
+                    {mode ? (<p className="bg-emerald-600 px-2 py-1 rounded-sm text-zinc-100">Light</p>) : (<p className="bg-zinc-900 px-2 py-1 rounded-sm text-zinc-100">Dark</p>)}
                 </div> 
                 {/* Mobile menu */}
                 <div className="flex lg:hidden">
