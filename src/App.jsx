@@ -33,24 +33,23 @@ export default function App() {
                         onChange={handleChangeInput}
                         value={input}  
                       />
-                      <h1>{input}</h1>
+
                     </div>
                   </div>
                   
                   <div className='grid grid-cols-1 gap-3 md:grid-cols-2 lg:md:grid-cols-3 mt-6'>
                     {/* componente */}
-
-                  {/* Filtro e mapa dos objetos */}
-                  {tecs.filter((item) => {
-                    if (input == ""){
-                      return item              
-                    } else if (item.title.toLowerCase().includes(input.toLocaleLowerCase())) {
-                      return item
-                    }
-                  })
-                  .map((tec) => (
-                    <Tecs tec={tec} key={tec.id} />
-                  ))}                  
+                    {/* Filtro e mapa dos objetos */}
+                    {tecs.filter((item) => {
+                      if (input === ""){
+                          return console.log            
+                      } else if (item.title.toLowerCase().includes(input.toLocaleLowerCase())) {
+                                return item
+                      }
+                    })
+                    .map((tec) => (
+                      <Tecs tec={tec} key={tec.id} />
+                    ))}                  
                   </div>
                   <div className='flex items-center justify-center'>
                     <button className='mt-6 bg-zinc-900 text-zinc-100 p-4 rounded-sm hover:bg-zinc-800 transition-all cursor-pointer text-sm'>See more</button>
