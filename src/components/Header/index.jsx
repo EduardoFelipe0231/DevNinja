@@ -29,9 +29,9 @@ const Header = () => {
     };
 
     return(
-        <header className="bg-zinc-100 shadow-sm w-full flex items-center px-5 border-2 border-l border-zinc-100 dark:bg-zinc-950 dark:border-none">
+        <header className="bg-zinc-100 shadow-sm w-full flex items-center px-5 border-2 border-l border-zinc-100 dark:bg-zinc-900/95 dark:border-none">
             <div className=" relative container mx-auto py-4 flex items-center justify-between">
-                <div className="bg-orange-700 p-2 rounded-sm text-zinc-100">
+                <div className="bg-yellow-300 p-2 rounded-sm text-zinc-800">
                     <h2 className="font-bold text-sm">DevNinja</h2>
                 </div>
                 <nav className="text-zinc-900 dark:text-zinc-100">
@@ -49,8 +49,8 @@ const Header = () => {
                 </nav>
 
                 {/* Dark mode */}
-                <div onClick={toogleTheme} className="transition-all cursor-pointer p-2 bg-zinc-900 rounded-full text-zinc-10 dark:bg-zinc-700">
-                    {mode ? (<Sun className="text-yellow-300" />) : (<Moon />)}
+                <div onClick={toogleTheme} className="transition-all cursor-pointer p-2  rounded-full text-zinc-10 dark:text-zinc-100">
+                    {mode ? (<p className="bg-blue-600 px-2 py-1 rounded-sm text-zinc-100">Light</p>) : (<p className="bg-blue-600 px-2 py-1 rounded-sm text-zinc-100">Dark</p>)}
                 </div> 
                 {/* Mobile menu */}
                 <div className="flex lg:hidden">
@@ -61,9 +61,9 @@ const Header = () => {
                     )}
 
                     <nav 
-                        className={`text-zinc-950 bg-orange-700 fixed top-17 right-0 w-full h-full flex justify-center items-center rounded-sm ${isOpen ? "opacity-100" : "opacity-0 hidden" }`} style={{transition: "transform 0.3s ease, opacity 0.3s ease"}}>
+                        className={`text-zinc-950 bg-yellow-300 fixed top-17 right-0 w-full h-full flex justify-center items-center rounded-sm ${isOpen ? "opacity-100" : "opacity-0 hidden" }`} style={{transition: "transform 0.3s ease, opacity 0.3s ease"}}>
                         
-                        <ul className="flex  flex-col items-center gap-5 text-lg text-zinc-100">
+                        <ul className="flex  flex-col items-center gap-5 text-lg text-zinc-900">
                             <li className="py-10 hover:bg-zinc-200 w-full text-center">
                                 <a href="#" className="hover:text-zinc-950 p-6 rounded-full transition-all">UI Design</a>
                             </li>

@@ -19,17 +19,17 @@ export default function App() {
   return (
       <div className='w-screen h-screen overflow-y-auto flex flex-col'>
           <Header />
-          <main className='flex-1 bg-gray-200 flex flex-col dark:bg-zinc-950/90'>
+          <main className='flex-1 bg-gray-200 flex flex-col dark:bg-zinc-900'>
               <section className='container mx-auto py-5 flex flex-col px-3 min-h-screen'>
                   <div className='flex flex-col items-center justify-between gap-6 '>
-                    <h1 className='text-3xl font-bold lg:text-3xl flex-1'>Courses</h1>
+                    <h1 className='text-3xl font-bold lg:text-3xl flex-1 dark:text-zinc-100 text-zinc-800'>Courses</h1>
                     {/* search */}
-                    <div className='flex w-full items-center gap-3 rounded-sm bg-zinc-100 p-3 ring-zinc-700 text-zinc-700 '>
+                    <div className='flex w-full items-center gap-3 rounded-sm bg-zinc-100 p-3 ring-zinc-700 text-zinc-700 dark:bg-zinc-800/95 dark:text-zinc-100'>
                       <Search width={15} />
                       <input 
                         type="text" 
                         placeholder='Search your course here..' 
-                        className="flex-1 bg-transparent outline-none placeholder:text-zinc-500 text-sm" 
+                        className="flex-1 bg-transparent outline-none placeholder:text-zinc-500 text-sm dark:placeholder:text-zinc-400"  
                         onChange={handleChangeInput}
                         value={input}  
                       />
