@@ -51,9 +51,7 @@ export default function App() {
                       <Tecs tec={tec} key={tec.id} />
                     ))}                  
                   </div>
-                  <div className='flex items-center justify-center'>
-                    <button className='mt-6 bg-zinc-900 text-zinc-100 p-4 rounded-sm hover:bg-zinc-800 transition-all cursor-pointer text-sm'>See more</button>
-                  </div>
+                  
               </section>
           </main>
           <Footer />
