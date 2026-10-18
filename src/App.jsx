@@ -17,9 +17,9 @@ export default function App() {
 
   
   return (
-      <div className='w-screen h-screen bg-zinc-200 overflow-y-auto flex flex-col'>
+      <div className='w-screen h-screen overflow-y-auto flex flex-col'>
           <Header />
-          <main className='flex-1 bg-zinc-300 flex flex-col '>
+          <main className='flex-1 bg-gray-200 flex flex-col dark:bg-zinc-950/90'>
               <section className='container mx-auto py-5 flex flex-col px-3 min-h-screen'>
                   <div className='flex flex-col items-center justify-between gap-6 '>
                     <h1 className='text-3xl font-bold lg:text-3xl flex-1'>Courses</h1>
