@@ -19,7 +19,7 @@ const Details = () => {
         const foundPerson = getPersonById(id);        
         
         if (!foundPerson) {
-            navigate("/error")
+            navigate("/")
             return;
         }
 
@@ -31,13 +31,20 @@ const Details = () => {
     }, [id]);
     
     return(
-        <>
-            <h1>Detalhes - {id}</h1>
-            <button onClick={handleBack}>Voltar</button>
-            <h1>{details.title}</h1>
-            <h2>{details.details}</h2>
-
-        </>
+        <div className="w-full h-screen bg-zinc-300 dark:bg-zinc-700">           
+            <section className="container mx-auto py-5 px-3 ">
+                <div className={`w-full h-80 rounded-lg  overflow-hidden flex items-center justify-center bg-zinc-900 dark:bg-zinc-600/50`}>
+                    <h2 className="text-4xl font-semibold leading-1 text-zinc-100 md:text-5xl lg:text-6xl">{details.title}</h2>
+                </div>
+                <div className="w-full flex flex-col mt-5 gap-3 text-zinc-900 dark:text-zinc-100">
+                    <h1 className="font-bold text-lg">{details.title}</h1>
+                    <p className="text-base md:text-lg">{details.details}</p>
+                </div>
+                <div className="flex items-center justify-center">
+                    <button className="bg-zinc-900 mt-10 p-2 text-zinc-100 rounded-sm hover:bg-zinc-800 cursor-pointer dark:bg-zinc-800" onClick={handleBack}>Voltar</button>
+                </div>
+            </section>
+        </div>
     )
 }
 

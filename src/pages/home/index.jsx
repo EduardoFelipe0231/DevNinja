@@ -2,6 +2,7 @@ import Tecs from '../../components/Tecs';
 import {getTecs} from '../../data/tecs';
 import { Search } from 'lucide-react';
 import { useState } from 'react';
+import { Link, useParams } from 'react-router-dom';
 
 const Home = () => {
     const tecs = getTecs();
@@ -12,8 +13,10 @@ const Home = () => {
         setInput(e.target.value)
     }
 
+    const { id } = useParams();
+
     return(
-        <div className='w-screen h-screen overflow-y-auto flex flex-col'>
+        <div className='w-screen h-screen overflow-y-auto flex flex-col '>
                         
                 <main className='flex-1 bg-gray-200 flex flex-col dark:bg-zinc-900'>
                     <section className='container mx-auto py-5 flex flex-col px-3 min-h-screen'>
@@ -36,17 +39,22 @@ const Home = () => {
                         <div className='grid grid-cols-1 gap-3 md:grid-cols-2 lg:md:grid-cols-3 mt-6'>
                             {/* componente */}
                             {/* Filtro e mapa dos objetos */}
-                            {tecs.filter((item) => {
-                                if (input === ""){
-                                    return console.log            
-                                } else if (item.title.toLowerCase().includes(input.toLocaleLowerCase())) {
-                                            return item
-                                }
-                            })
-                            .map((tec) => (
-                                <Tecs tec={tec} key={tec.id} />
-                            ))}                  
+                            
+                                {tecs.filter((item) => {
+                                    if (input === ""){
+                                        return console.log            
+                                    } else if (item.title.toLowerCase().includes(input.toLocaleLowerCase())) {
+                                                return item
+                                    }
+                                })
+                                .map((tec) => (
+                                    <Link to={`/details/${tec.id}`} key={tec.id} >
+                                        <Tecs tec={tec} />
+                                    </Link>
+                                ))}       
+                                      
                         </div>
+                        
                         
                     </section>
                 </main> 

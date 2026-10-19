@@ -13,7 +13,6 @@ export default function RoutesApp(){
                 <Routes>
                     <Route path="/" element={<Home />}></Route>
                     <Route path="/details/:id" element={<Details />}></Route>
-
                     <Route path="*" element={<Error />}></Route>
                 </Routes>
             <Footer />

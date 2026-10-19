@@ -1,18 +1,24 @@
+import js from '../../public/js.png'
+
 const tecs = [
     {
         "id": 1,
         "title": "Python",
-        "details": "Líder em inteligência artificial, ciência de dados, automação e back-end, graças à sua sintaxe simples e legível."
+        "details": "Líder em inteligência artificial, ciência de dados, automação e back-end, graças à sua sintaxe simples e legível.",
+        "img": js
     },
     {
         "id": 2,
         "title": "JavaScript ",
-        "details": "A base absoluta do desenvolvimento web (front-end e full-stack com Node.js), permitindo criar páginas interativas e dinâmicas."
+        "details": "A base absoluta do desenvolvimento web (front-end e full-stack com Node.js), permitindo criar páginas interativas e dinâmicas.",
+        "img": js
+        
     },
     {
         "id": 3,
         "title": "Java",
-        "details": " – Pilar do ecossistema corporativo, bancário e de grandes sistemas de missão crítica, além de ser muito usado no desenvolvimento Android"
+        "details": "Pilar do ecossistema corporativo, bancário e de grandes sistemas de missão crítica, além de ser muito usado no desenvolvimento Android",
+
     },
     {
         "id": 4,
@@ -22,12 +28,12 @@ const tecs = [
     {
         "id": 5,
         "title": "C#",
-        "details": " – Muito utilizada no ecossistema Microsoft, em softwares de gestão empresarial (ERPs) e no desenvolvimento de jogos com a Unity"
+        "details": "Muito utilizada no ecossistema Microsoft, em softwares de gestão empresarial (ERPs) e no desenvolvimento de jogos com a Unity"
     },
     {
         "id": 6,
         "title": "C++",
-        "details": " – Focada em alto desempenho, sendo amplamente empregada em games (Unreal Engine), sistemas operacionais e infraestruturas de IA."
+        "details": "Focada em alto desempenho, sendo amplamente empregada em games (Unreal Engine), sistemas operacionais e infraestruturas de IA."
     }
 ,
     {
