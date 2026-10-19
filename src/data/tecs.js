@@ -59,3 +59,7 @@ const tecs = [
 export function getTecs(){
     return tecs;
 }
+
+export  function getPersonById(id){
+  return tecs.find((a) => a.id === Number(id));
+}

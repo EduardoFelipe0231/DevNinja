@@ -1,5 +1,6 @@
 import { Menu, Moon, Sun, X } from "lucide-react";
 import { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 
@@ -32,7 +33,7 @@ const Header = () => {
         <header className="bg-zinc-100 shadow-sm w-full flex items-center px-5 border-2 border-l border-zinc-100 dark:bg-zinc-900/95 dark:border-none">
             <div className=" relative container mx-auto py-4 flex items-center justify-between">
                 <div className="bg-yellow-300 p-2 rounded-sm text-zinc-800">
-                    <h2 className="font-bold text-sm">DevNinja</h2>
+                    <Link to={'/'} className="font-bold text-sm">DevNinja</Link>
                 </div>
                 <nav className="text-zinc-900 dark:text-zinc-100">
                     <ul className="hidden items-center gap-5 lg:flex ">
